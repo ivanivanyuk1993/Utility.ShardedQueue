@@ -83,6 +83,17 @@ public class ShardedQueue<T>
         return removedItem;
     }
 
+    /// <summary>
+    ///     Notice that when <see cref="Enqueue"/> is called in same code block, like
+    ///     <code>
+    ///     Enqueue(1);
+    ///     Enqueue(2);
+    ///     </code>
+    ///
+    ///     1 will always be added before 2, because we actually acquire lock and
+    ///     do all array capacity manipulations under lock
+    /// </summary>
+    /// <param name="item"></param>
     public void Enqueue(T item)
     {
         var queueIndex = Interlocked.Increment(ref _tailIndex) & _moduloNumber;
