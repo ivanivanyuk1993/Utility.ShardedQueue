@@ -11,6 +11,7 @@ public class ShardedQueueBenchmark
 
     public static int[] NSource => new[]
     {
+        (int) 1e3,
         (int) 1e4
     };
 
