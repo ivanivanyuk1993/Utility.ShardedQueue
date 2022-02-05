@@ -12,6 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\RunWithMaxConcurrencyProvider\RunWithMaxConcurrencyProviderNS\RunWithMaxConcurrencyProviderNS.csproj" />
       <ProjectReference Include="..\ShardedQueueNS\ShardedQueueNS.csproj" />
     </ItemGroup>
 

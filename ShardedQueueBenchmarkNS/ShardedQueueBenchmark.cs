@@ -1,6 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
+using RunWithMaxConcurrencyProviderNS;
 using ShardedQueueNS;
 
 namespace ShardedQueueBenchmarkNS;
