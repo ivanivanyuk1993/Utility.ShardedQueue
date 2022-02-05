@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\IsLockedAndQueue\IsLockedAndQueueNS\IsLockedAndQueueNS.csproj" />
         <ProjectReference Include="..\..\SpinLockUtil\SpinLockUtilNS\SpinLockUtilNS.csproj" />
     </ItemGroup>
 
