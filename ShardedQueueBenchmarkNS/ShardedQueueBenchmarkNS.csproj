@@ -20,8 +20,4 @@
       <Folder Include="BenchmarkDotNet.Artifacts\results" />
     </ItemGroup>
 
-    <ItemGroup>
-      <None Remove="BenchmarkDotNet.Artifacts\ShardedQueueBenchmarkNS.ShardedQueueBenchmark-20211228-185917.log" />
-    </ItemGroup>
-
 </Project>
